@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logoView"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_insta_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"/>
+
+            <EditText
+                android:id="@+id/inputEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input_background"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:padding="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/logoView"/>
+
+            <EditText
+                android:id="@+id/inputSenhaLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input_background"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:padding="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/inputEmailLogin"/>
+
+            <Button
+                android:id="@+id/buttonEntrarLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTRAR"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_bold"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_below="@+id/inputSenhaLogin"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonEntrarLogin"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OU"
+                    android:textSize="16dp"
+                    android:textColor="@color/grey"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linhaDeDivisa"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:layout_marginTop="800dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linhaDeDivisa"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não tem uma conta?"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastre-se"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

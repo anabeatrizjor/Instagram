@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="enter">ENTRAR</string>
+    <string name="photo">Tirar foto</string>
+    <string name="gallery">Selecionar foto da galeria</string>
+    <string name="text_welcome_example">Encontre pessoas para seguir e comece a compartilhar fotos. Você pode alterar seu nome de usuário a qualquer momento.</string>
+    <string name="textt_bio_test">oioiiooioiioioiioioioioioioioioioioioioioioioioioioioikoioooioioiioiioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioiooiioioioio</string>
+</resources>

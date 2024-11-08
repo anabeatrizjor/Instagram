@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="16sp"
+                android:textColor="@color/greyDark"
+                android:text="BEM VINDO AO INSTAGRAM , ANA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"/>
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:layout_below="@+id/titleWelcome"
+                android:text="@string/text_welcome_example"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/greyDark"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/buttonAcessarInsta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AVANÇAR"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_bold"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_below="@+id/textWelcome"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="400dp"
+                android:layout_below="@+id/buttonAcessarInsta"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ao clicar em Avançar, você concorda com nossos"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Termos, Política de Dados e Política de Cookies"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

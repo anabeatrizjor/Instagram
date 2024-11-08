@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/search_img_user"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/search_text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toEndOf="@+id/search_img_user"
+        app:layout_constraintTop_toTopOf="@+id/search_img_user"
+        app:layout_constraintBottom_toTopOf="@+id/search_text_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/search_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintTop_toTopOf="@+id/search_text_username"
+        app:layout_constraintBottom_toBottomOf="@+id/search_img_user"
+        app:layout_constraintStart_toStartOf="@+id/search_text_username"
+        android:textSize="16sp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/greyDark"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
