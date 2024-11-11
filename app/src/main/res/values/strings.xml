@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Instagram</string>
+    <string name="error">Algo deu errado. Tente Novamente.</string>
     <string name="enter">ENTRAR</string>
     <string name="photo">Tirar foto</string>
     <string name="gallery">Selecionar foto da galeria</string>
