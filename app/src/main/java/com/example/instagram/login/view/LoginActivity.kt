@@ -6,6 +6,7 @@ import android.os.Message
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.instagram.R
+import com.example.instagram.common.base.DependencyInjector
 import com.example.instagram.databinding.ActivityLoginBinding
 import com.example.instagram.home.Home
 import com.example.instagram.login.Login
@@ -18,14 +19,14 @@ class LoginActivity : AppCompatActivity(), Login.View {
     private lateinit var binding : ActivityLoginBinding
     override lateinit var presenter : Login.Presenter
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        presenter = LoginPresenter(this, DependencyInjector.loginRepository() )
 
-        val repository = LoginRepository(FakeDataSource())
-        presenter = LoginPresenter(this, repository )
 
         with(binding) {
             binding.buttonEntrarLogin.setOnClickListener {
