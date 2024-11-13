@@ -13,6 +13,8 @@ import com.example.instagram.login.Login
 import com.example.instagram.login.data.FakeDataSource
 import com.example.instagram.login.data.LoginRepository
 import com.example.instagram.login.presentation.LoginPresenter
+import com.example.instagram.register.Register
+import com.example.instagram.register.RegisterEmailFragment
 
 class LoginActivity : AppCompatActivity(), Login.View {
 
@@ -32,10 +34,21 @@ class LoginActivity : AppCompatActivity(), Login.View {
             binding.buttonEntrarLogin.setOnClickListener {
                 presenter.login(inputEmailLogin.text.toString(), inputSenhaLogin.text.toString() )
             }
+
+            cadastrarText.setOnClickListener {
+                goToRegisterScreen()
+            }
+
         }
 
-        window.statusBarColor = getColor(R.color.white)
 
+
+        window.statusBarColor = getColor(R.color.grey)
+
+    }
+
+    private fun goToRegisterScreen() {
+        startActivity(Intent(this, Register::class.java))
     }
 
     override fun onDestroy() {
