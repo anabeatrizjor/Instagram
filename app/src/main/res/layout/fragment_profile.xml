@@ -19,7 +19,6 @@
                 android:id="@+id/profile_image_icon"
                 android:src="@drawable/baseline_account_circle_24"
                 android:layout_width="100dp"
-                app:civ_border_color="@color/grey"
                 app:civ_circle_background_color="@color/white"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"

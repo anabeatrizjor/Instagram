@@ -19,9 +19,27 @@ class RegisterPhoto : Fragment(R.layout.fragment_register_photo) {
 
         binding = FragmentRegisterPhotoBinding.bind(view)
 
+        binding?.let {
+            with(it) {
+                buttonPularAddPhoto.setOnClickListener {
+                    navigateToRegisterWelcome()
+                }
+            }
+        }
+
         customDialog.addButton({
         }, R.string.photo, R.string.gallery)
         customDialog.show()
+    }
+
+    private fun navigateToRegisterWelcome() {
+        val registerWelcomeFragment = RegisterNamePassword()
+
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.registerFragment, RegisterWelcome())
+            addToBackStack(null)
+            commit()
+        }
     }
 
     override fun onDestroyView() {

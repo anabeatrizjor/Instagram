@@ -27,7 +27,20 @@ class RegisterEmailFragment : Fragment(R.layout.fragment_register_email), Regist
                     startActivity(Intent(requireContext(), LoginActivity::class.java))
                     activity?.finish()
                 }
+                buttonEntrarLogin.setOnClickListener {
+                    navigateToRegisterNamePassword()
+                }
             }
+        }
+    }
+
+    private fun navigateToRegisterNamePassword() {
+        val registerNamePasswordFragment = RegisterNamePassword()
+
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.registerFragment, registerNamePasswordFragment)
+            addToBackStack(null)
+            commit()
         }
     }
 
